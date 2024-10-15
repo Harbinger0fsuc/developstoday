@@ -24,7 +24,8 @@ const props = defineProps<{
 
 const nextHoliday = [...props.country.holiday]
 const nextHolidaySorted = nextHoliday.sort(
-  (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf(),
+  (a: Holiday, b: Holiday) =>
+    new Date(b.date).valueOf() - new Date(a.date).valueOf(),
 )
 
 const nextHolidayItself: Holiday = nextHolidaySorted[0]
