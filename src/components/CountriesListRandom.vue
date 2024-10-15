@@ -3,7 +3,11 @@
     <h3 class="countries-list-random__title">{{ title }}</h3>
 
     <ul class="countries-list-random__itself">
-      <li v-for="(country, index) in countries" :key="index">
+      <li
+        v-for="(country, index) in countries"
+        class="countries-list-random__item"
+        :key="index"
+      >
         <CountryCardRandom :country="country" />
       </li>
     </ul>
