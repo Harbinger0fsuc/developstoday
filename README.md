@@ -38,20 +38,15 @@ npm run build
 npm run lint
 ```
 
-Features and architecture
+# Features and architecture
 
-# Fetching the list of countries from the Nager.Date API
+Fetching the list of countries from the Nager.Date API
+Searching countries by name
+3 random countries widget
+Single country page
+Change a country's holidays by clicking on a specific year button
 
-# Searching countries by name
+# Additional libraries and frameworks:
 
-# 3 random countries widget
-
-# Single country page
-
-# Change a country's holidays by clicking on a specific year button
-
-Additional libraries and frameworks:
-
-# Normalize.css to reset styles
-
-# Sass for custom styles
+Normalize.css to reset styles
+Sass for custom styles

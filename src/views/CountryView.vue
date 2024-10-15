@@ -4,9 +4,13 @@
       <div class="container">
         <RouterLink to="/">Go back to all countries</RouterLink>
 
+        <p v-if="isLoading">Loading...</p>
+
         <h1 v-if="countryInfo.officialName" class="single-country__title">
           {{ countryInfo.officialName }}
         </h1>
+
+        <p v-if="isLoadingHolidays">Loading...</p>
 
         <!-- HolidaysList Component -->
         <HolidaysList :holidays="holidays" :year="year" />

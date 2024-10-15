@@ -10,6 +10,8 @@
               @customSearch="(val: string) => (searchQuery = val)"
             />
 
+            <p v-if="isLoading">Loading...</p>
+
             <!-- CountriesList Component -->
             <CountriesList :countries="countriesFiltered" />
           </div>
